@@ -1,24 +1,63 @@
-# GoMail - Exercise 5
+# GoMail – Smart Email Management App
 
-A full Gmail-like application using *Android ,**Node.js, and a TCP-based **C++ server* with a Bloom filter.  
+A full-stack Gmail-like email application built with Android, Node.js, and a TCP-based C++ server.
 
-This project supports multiple users, live email management, looks and works like Gmail.
-
-
----
-
-## Running the System in Docker
-
-This project supports Docker-based execution via docker-compose.
+The system supports user authentication, email management, spam detection using a Bloom filter, labels, and real-time search.
 
 ---
 
-## In The Terminal — Build and Start All Containers
+## Tech Stack
 
-bash
+* **Frontend:** Android
+* **Backend API:** Node.js / Express
+* **Server Logic:** C++ (TCP-based server)
+* **Communication:** TCP sockets
+* **Spam Detection:** Bloom Filter + Blacklist
+* **Containerization:** Docker / Docker Compose
+
+---
+
+## System Architecture
+
+The system is composed of three main components:
+
+1. **Android Client**
+   Handles user interface (login, register, inbox, compose, labels, search)
+
+2. **Node.js API Server**
+   Handles business logic, user requests, and communication with the mail server
+
+3. **C++ TCP Server**
+   Handles email processing and spam detection using Bloom filters and blacklist files
+
+---
+
+## Features
+
+* User registration and login
+* Compose and send emails
+* Inbox / Sent / Spam / Important views
+* Spam detection using Bloom filter
+* Custom labels
+* Real-time search
+* Delete mail (per user)
+* Profile picture support
+
+---
+
+## Running the System with Docker
+
+Build and run all services:
+
+```bash
 docker-compose up --build
+```
 
-This will build and start the Node.js API container, the C++ server container and the React-Web container.
+This will start:
+
+* Node.js API server
+* C++ TCP server
+* Client application
 
 ---
 
