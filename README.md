@@ -63,9 +63,6 @@ Future mails with the blacklisted URL will go to the Spam label.
 
 <img width="1080" height="1920" alt="Image" src="https://github.com/user-attachments/assets/0b05e1b6-9d70-48a3-b41f-6e66e9845548" />
 
-<img width="1917" height="1022" alt="Image" src="https://github.com/user-attachments/assets/d54c74c3-85cd-43e3-b709-2eccc5aaef0d" />
-
-If you remove a mail from Spam, the URL is removed from the blacklist
 
 
 
